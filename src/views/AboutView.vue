@@ -1,13 +1,13 @@
 <template>
-  <main id="about">
+  <main id="about" class="main">
+    <div class="about-header">
+      {{ $t('about.career') }} <span class="color">{{ $t('about.professional') }}</span>
+      <span class="header-caption"
+        >{{ $t('about.download') }}<span class="color"> {{ $t('about.resume') }}</span></span
+      >
+    </div>
     <!--about content-->
     <div id="about-content">
-      <div class="about-header">
-        {{ $t('about.career') }} <span class="color">{{ $t('about.professional') }}</span>
-        <span class="header-caption"
-          >{{ $t('about.download') }}<span class="color"> {{ $t('about.resume') }}</span></span
-        >
-      </div>
       <div class="about-main">
         <div class="about-first-paragraph wow">
           <!--about description-->
@@ -197,4 +197,9 @@
   </main>
 </template>
 
-<style></style>
+<style>
+.about {
+  padding-top: 60px;
+}
+</style>
+<script lang="ts" setup></script>

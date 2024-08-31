@@ -5,7 +5,11 @@
   font-weight: normal;
 }
 
-a,
+.main {
+  padding-top: 20px;
+}
+
+nav a,
 .green {
   text-decoration: none;
   color: hsl(343, 100%, 39%);
@@ -16,11 +20,5 @@ a,
 @media (hover: hover) {
   nav a:hover {
     background-color: hsla(0, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  #app {
-    padding: 0 2rem;
   }
 }

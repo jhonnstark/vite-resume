@@ -5,7 +5,14 @@ import MenuHeader from '@/components/MenuHeader.vue'
 
 <template>
   <MenuHeader />
-  <RouterView />
+
+  <router-view v-slot="{ Component, route }">
+    <transition mode="out-in" name="fade">
+      <div :key="route.fullPath" class="main">
+        <component :is="Component" />
+      </div>
+    </transition>
+  </router-view>
 </template>
 
 <style scoped></style>
