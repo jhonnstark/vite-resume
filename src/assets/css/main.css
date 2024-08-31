@@ -35,3 +35,37 @@ nav a,
     border-bottom: 2px solid var(--color-primary);
   }
 }
+main span,
+main.portfolio p,
+.about-header,
+main a {
+  transition: 0.5s;
+  animation: loading 0.8s ease-in-out 1;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.contact-info,
+main img {
+  animation: loadingSoft 0.8s ease-in-out 1;
+}
+
+@keyframes loadingSoft {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

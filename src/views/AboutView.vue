@@ -197,7 +197,7 @@
   </main>
 </template>
 
-<style>
+<style lang="scss" scoped>
 .about {
   padding-top: 60px;
 }

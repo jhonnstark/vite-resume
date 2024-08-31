@@ -1,11 +1,11 @@
 <script lang="ts" setup></script>
 
 <template>
-  <main id="portfolio" class="main">
+  <main id="portfolio" class="portfolio">
     <div class="portfolio-header">
       <span class="color"> {{ $t('portfolio.mi') }} </span> {{ $t('portfolio.title') }}
       <span class="header-caption">
-        {{ $t('portfolio.subtitle') }}<span class="color">{{ $t('portfolio.works') }}</span>
+        {{ $t('portfolio.subtitle') }} <span class="color">{{ $t('portfolio.works') }}</span>
       </span>
 
       <div class="portfolio-subtitle">
