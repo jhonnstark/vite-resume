@@ -5,8 +5,12 @@
   font-weight: normal;
 }
 
-.main {
+main {
   padding-top: 20px;
+}
+
+nav {
+  transition: 0.4s;
 }
 
 nav a,
@@ -20,5 +24,14 @@ nav a,
 @media (hover: hover) {
   nav a:hover {
     background-color: hsla(0, 100%, 37%, 0.2);
+  }
+}
+
+@keyframes borderColor {
+  0% {
+    border-bottom: 2px solid transparent;
+  }
+  100% {
+    border-bottom: 2px solid var(--color-primary);
   }
 }

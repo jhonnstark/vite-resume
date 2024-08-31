@@ -9,6 +9,7 @@ import { RouterLink } from 'vue-router'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/portfolio">Portfolio</RouterLink>
+        <RouterLink to="/charity">Charity</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
       </nav>
     </div>
@@ -22,6 +23,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+  width: 100%;
 }
 
 .logo {
@@ -30,7 +32,7 @@ header {
 }
 
 .wrapper {
-  width: 1024px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 var(--section-gap);
 }
@@ -43,18 +45,18 @@ nav {
   margin-top: 2rem;
 }
 
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+}
+
 nav a.router-link-exact-active {
   color: var(--color-text);
 }
 
 nav a.router-link-exact-active:hover {
   background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
 }
 
 nav a:first-of-type {
@@ -68,6 +70,7 @@ nav a:first-of-type {
     padding-right: calc(var(--section-gap) / 2);
 
     .wrapper {
+      width: 1024px;
       display: flex;
       place-items: flex-start;
       flex-wrap: wrap;
@@ -85,6 +88,37 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    width: auto;
+  }
+
+  nav a {
+    padding: 0.5rem 10px;
+    border: 0;
+  }
+
+  nav a.router-link-exact-active {
+    animation: borderColor 0.6s ease-in-out 1 forwards;
+    margin-left: 10px;
+  }
+
+  nav a:first-of-type {
+    margin-left: 0;
+    animation-direction: reverse;
+    animation-duration: 0s;
   }
 }
 </style>

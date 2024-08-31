@@ -1,9 +1,76 @@
 <script setup lang="ts">
 import config from '../constants/particles'
+import { onMounted } from 'vue'
 
 const particlesLoaded = async (container: any) => {
   console.log('Particles container loaded', container)
 }
+
+class TxtRotate {
+  toRotate: string[]
+  el: Element
+  loopNum: number
+  period: number
+  txt: string
+  isDeleting: boolean
+
+  constructor(el: Element, toRotate: string[], period: string) {
+    this.toRotate = toRotate
+    this.el = el
+    this.loopNum = 0
+    this.period = parseInt(period, 10) || 2000
+    this.txt = ''
+    this.tick()
+    this.isDeleting = false
+  }
+
+  tick() {
+    const i = this.loopNum % this.toRotate.length
+    const fullTxt = this.toRotate[i]
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1)
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1)
+    }
+
+    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>'
+
+    let delta = 200 - Math.random() * 100
+
+    if (this.isDeleting) {
+      delta /= 2
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period
+      this.isDeleting = true
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false
+      this.loopNum++
+      delta = 100
+    }
+
+    setTimeout(() => {
+      this.tick()
+    }, delta)
+  }
+}
+
+function rotateText() {
+  const elements = document.getElementsByClassName('txt-rotate')
+  for (let i = 0; i < elements.length; i++) {
+    const toRotate = elements[i].getAttribute('data-rotate')
+    const period = elements[i].getAttribute('data-period') || '2000'
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period)
+    }
+  }
+}
+
+onMounted(() => {
+  rotateText()
+})
 </script>
 
 <template>
@@ -45,3 +112,22 @@ const particlesLoaded = async (container: any) => {
     </div>
   </main>
 </template>
+
+<style lang="scss" scoped>
+.txt-rotate > .wrap {
+  border-right: 0em solid #666;
+}
+
+@media only screen and (max-width: 400px) {
+  .header-content .firstline {
+    font-size: 3.1rem;
+  }
+  .header-content .secondline {
+    font-size: 20px;
+  }
+  .social-media {
+    width: 40px;
+    margin: 6px 15px;
+  }
+}
+</style>
