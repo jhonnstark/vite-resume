@@ -2,11 +2,11 @@
 
 <template>
   <main id="caridad">
+    <div class="about-header">
+      <span class="color">{{ $t('caridad.title') }}</span>
+    </div>
     <!--caridad content-->
     <div id="about-content">
-      <div class="about-header">
-        <span class="color">{{ $t('caridad.title') }}</span>
-      </div>
       <div class="about-main">
         <div class="about-first-paragraph wow">
           <span class="about-first-line">
@@ -28,4 +28,16 @@
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media only screen and (max-width: 550px) {
+  .about-first-line {
+    font-size: 20px;
+  }
+  .about-first-paragraph .color {
+    font-size: 30px;
+  }
+  .about-second-line {
+    text-align: justify;
+  }
+}
+</style>
