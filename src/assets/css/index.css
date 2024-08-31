@@ -253,7 +253,6 @@ body {
   z-index: 2;
   text-align: center;
   height: auto;
-  padding-right: 60px;
   width: auto;
 }
 .header-content .firstline {
@@ -428,7 +427,6 @@ body {
 }
 #about {
   background-color: #101010;
-  display: none;
   width: 100%;
   height: auto;
   overflow: hidden;
