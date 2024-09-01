@@ -31,7 +31,7 @@
         </div>
         <!--about picture-->
         <div class="about-img">
-          <img alt="Code" src="../assets/img/jhon2.jpg" />
+          <img alt="Code" src="../assets/img/jhon3.jpg" />
         </div>
       </div>
     </div>

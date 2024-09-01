@@ -14,7 +14,11 @@
     </div>
 
     <div id="portfolio-content">
-      <div id="transportamex-link" class="portfolio portfolio-first">
+      <RouterLink
+        id="transportamex-link"
+        class="portfolio portfolio-first"
+        to="/portfolio/transportamex"
+      >
         <h2>Transportamex</h2>
         <div class="portfolio-wrap">
           <div class="portfolio-image">
@@ -32,17 +36,17 @@
         </div>
         <div class="portfolio-text">
           <p>{{ $t('transportamex.description') }}</p>
-          <div class="button">
-            <a href="https://transportamex.com/" target="_blank">
-              <button>
-                <span class="index"> Ver<i class="gg-arrow-right"></i> </span>
-              </button>
-            </a>
-          </div>
+          <!--          <div class="button">-->
+          <!--            <a href="https://transportamex.com/" target="_blank">-->
+          <!--              <button>-->
+          <!--                <span class="index"> Ver<i class="gg-arrow-right"></i> </span>-->
+          <!--              </button>-->
+          <!--            </a>-->
+          <!--          </div>-->
         </div>
-      </div>
+      </RouterLink>
 
-      <div id="pailot-link" class="portfolio portfolio-first">
+      <RouterLink id="pailot-link" class="portfolio portfolio-first" to="/portfolio/pailot">
         <h2>Pailot</h2>
         <div class="portfolio-wrap">
           <div class="portfolio-image">
@@ -61,9 +65,9 @@
         <div class="portfolio-text">
           <p>{{ $t('pailot.description') }}</p>
         </div>
-      </div>
+      </RouterLink>
 
-      <div id="busolinea-link" class="portfolio portfolio-first">
+      <RouterLink id="busolinea-link" class="portfolio portfolio-first" to="/portfolio/busolinea">
         <h2>Busolinea</h2>
         <div class="portfolio-wrap">
           <div class="portfolio-image">
@@ -82,9 +86,9 @@
         <div class="portfolio-text">
           <p>{{ $t('busolinea.description') }}</p>
         </div>
-      </div>
+      </RouterLink>
 
-      <div id="cimaco-link" class="portfolio portfolio-first">
+      <RouterLink id="cimaco-link" class="portfolio portfolio-first" to="/portfolio/cimaco">
         <h2>Cimaco</h2>
         <div class="portfolio-wrap">
           <div class="portfolio-image">
@@ -103,9 +107,9 @@
         <div class="portfolio-text">
           <p>{{ $t('cimaco.description') }}</p>
         </div>
-      </div>
+      </RouterLink>
 
-      <div id="salud-link" class="portfolio portfolio-first">
+      <RouterLink id="salud-link" class="portfolio portfolio-first" to="/portfolio/salud">
         <h2>App Salud</h2>
         <div class="portfolio-wrap">
           <div class="portfolio-image">
@@ -121,7 +125,7 @@
         <div class="portfolio-text">
           <p>{{ $t('salud.description') }}</p>
         </div>
-      </div>
+      </RouterLink>
     </div>
   </main>
 </template>

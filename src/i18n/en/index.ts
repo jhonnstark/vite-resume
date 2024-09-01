@@ -63,29 +63,34 @@ export default {
       'Here you can see some of the projects I have worked on, from web pages to administration systems.'
   },
   transportamex: {
+    name: 'Transportamex',
     title: 'Web page',
     date: 'May,2020',
     description:
       'Purchase of tickets and consultation of routes and prices of the main bus routes in Mexico.'
   },
   pailot: {
+    name: 'Pailot',
     title: 'Blog',
     date: 'September, 2018',
     description:
       'Pailot is a transport application that allows you to request trips from the Central del Norte in Mexico City.'
   },
   busolinea: {
+    name: 'Busolinea',
     title: 'Web page',
     date: 'july, 2019',
     description:
       'Busolinea allows you to buy bus tickets and know the routes, schedules, prices, promotions and lines of Grupo Estrella Blanca that travel the country.'
   },
   salud: {
+    name: 'Salud',
     title: 'App',
     date: 'july, 2024',
     description: 'A product to face every dental challenge together.'
   },
   cimaco: {
+    name: 'Cimaco',
     title: 'CRM',
     date: 'August, 2024',
     description:

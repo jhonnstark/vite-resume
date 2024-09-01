@@ -64,29 +64,34 @@ export default {
       'Aquí puedes ver algunos de los proyectos en los que he trabajado, desde páginas web hasta sistemas de administración.'
   },
   transportamex: {
+    name: 'Transportamex',
     title: 'Pagina web',
     date: 'Mayo,2020',
     description:
       'Compra de boletos y consulta de rutas y precios de las principales rutas de autobuces en México.'
   },
   pailot: {
+    name: 'Pailot',
     title: 'Blog',
     date: 'septiembre, 2018',
     description:
       'Pailot es una aplicación de transporte que te permite solicitar viajes desde la Central del Norte en Ciudad de México. '
   },
   busolinea: {
+    name: 'Busolinea',
     title: 'Pagina web',
     date: 'julio, 2019',
     description:
       'Busolinea te permite comprar boletos de autobús y conocer las rutas, horarios, precios, promociones y líneas de Grupo Estrella Blanca que viajan por el país.'
   },
   salud: {
+    name: 'Salud',
     title: 'Pagina web',
     date: 'julio, 2024',
-    description: 'Un producto para engrentar cada reto odontologico juntos.'
+    description: 'Un producto para enfrentar cada reto odontologico juntos.'
   },
   cimaco: {
+    name: 'Cimaco',
     title: 'CRM',
     date: 'Agosto, 2024',
     description:
