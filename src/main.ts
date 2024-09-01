@@ -9,6 +9,7 @@ import { loadSlim } from '@tsparticles/slim' // if you are going to use `loadSli
 import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
+import VueEasyLightbox from 'vue-easy-lightbox'
 
 declare module '@tsparticles/vue3'
 
@@ -17,6 +18,7 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 app.use(i18n)
+app.use(VueEasyLightbox)
 app.use(Particles, {
   init: async (engine) => {
     // await loadFull(engine); // you can load the full tsParticles library from "tsparticles" if you need it

@@ -1,9 +1,33 @@
 <script lang="ts" setup>
 import { useRoute } from 'vue-router'
 import projects from '../constants/projects'
+import { ref, type Ref } from 'vue'
+
+interface Img {
+  src: string
+  title: string
+}
 
 const $route = useRoute()
 const name = $route.params.name as string
+const visibleRef = ref(false)
+const indexRef = ref(0) // default 0
+const imgsRef: Ref<Img[]> = ref([])
+
+const onShow = () => {
+  visibleRef.value = true
+}
+
+const showMultiple = () => {
+  imgsRef.value = projects[name].map((img, index) => ({
+    src: '/src/assets/img/' + img.src,
+    title: name + ' ' + (index + 1)
+  }))
+  indexRef.value = 0 // index of imgList
+  onShow()
+}
+
+const onHide = () => (visibleRef.value = false)
 </script>
 
 <template>
@@ -18,9 +42,9 @@ const name = $route.params.name as string
           <img
             v-for="img in projects[name]"
             :alt="name.toUpperCase()"
-            :data-ngsrc="'/src/assets/img/thumbnail/' + img.ngsrc"
-            :src="'/src/assets/img/' + img.src"
-            data-nanogallery2-lightbox
+            :key="img.src"
+            :src="'/src/assets/img/thumbnail/' + img.ngsrc"
+            @click="showMultiple"
           />
           <div class="blog-date">{{ $t(name + '.date') }}</div>
         </div>
@@ -30,6 +54,12 @@ const name = $route.params.name as string
         </div>
       </div>
     </div>
+    <vue-easy-lightbox
+      :imgs="imgsRef"
+      :index="indexRef"
+      :visible="visibleRef"
+      @hide="onHide"
+    ></vue-easy-lightbox>
   </main>
 </template>
 
