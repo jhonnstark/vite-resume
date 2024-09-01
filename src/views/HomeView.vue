@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import config from '../constants/particles'
 import { onMounted } from 'vue'
 
@@ -101,12 +101,12 @@ onMounted(() => {
           <span class="slash">|</span>
         </div>
         <div class="contact">
-          <a href="Mailto:jhonncerv@gmail.com"
-            ><img alt="email-pic" class="contactpic" src="../assets/img/mail.png" /></a
-          ><!--Your email Id write in place of "#"-->
-          <a href="Tel:+525611777736"
-            ><img alt="phone-pic" class="contactpic" src="../assets/img/icon-phone.png" /></a
-          ><!--Your telephone number Id write in place of "#"-->
+          <a href="Mailto:jhonncerv@gmail.com" target="_blank">
+            <img alt="email-pic" class="contactpic" src="../assets/img/mail.png" />
+          </a>
+          <a href="Tel:+525611777736" target="_blank">
+            <img alt="phone-pic" class="contactpic" src="../assets/img/icon-phone.png" />
+          </a>
         </div>
       </div>
     </div>
