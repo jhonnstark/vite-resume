@@ -43,6 +43,7 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  justify-content: center;
 }
 
 nav a {
@@ -66,11 +67,9 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   header {
     display: flex;
-    //place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    place-items: center;
 
     .wrapper {
-      width: 1024px;
       display: flex;
       place-items: flex-start;
       flex-wrap: wrap;
@@ -85,7 +84,6 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
