@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import MenuHeader from '@/components/MenuHeader.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 </script>
 
 <template>
@@ -13,6 +14,8 @@ import MenuHeader from '@/components/MenuHeader.vue'
       </div>
     </transition>
   </router-view>
+
+  <footer-component />
 </template>
 
 <style scoped></style>

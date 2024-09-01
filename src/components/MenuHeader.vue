@@ -101,6 +101,7 @@ nav a:first-of-type {
     justify-content: center;
     margin: 1em;
     width: auto;
+    font-size: 15px;
   }
 
   nav a {
@@ -117,6 +118,11 @@ nav a:first-of-type {
     margin-left: 0;
     animation-direction: reverse;
     animation-duration: 0s;
+  }
+}
+@media only screen and (max-width: 370px) {
+  nav {
+    font-size: 12px;
   }
 }
 </style>
