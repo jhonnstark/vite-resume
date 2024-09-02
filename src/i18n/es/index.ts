@@ -46,12 +46,13 @@ export default {
   },
   contact: {
     title: 'Contácta',
+    text: '¡Hola! Siéntete libre de enviarme un correo electrónico. Hago todo lo posible por responder de manera oportuna, pero los correos electrónicos no urgentes pueden tardar unos días adicionales. Encontrarás que soy bastante receptivo en WhatsApp, así que si tienes una pregunta relacionada con la programación, ese es un buen lugar para comenzar.',
     me: 'me',
     a: 'a',
     orders: 'tus ordenes.',
     subtitle: '¿Tienes un proyecto en mente? ¡Hablemos!',
     location: 'Ubicación',
-    name: 'Nombre',
+    Linkedin: 'Linkedin',
     city: 'Ciudad de México, México',
     email: 'Correo'
   },

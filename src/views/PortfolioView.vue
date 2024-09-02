@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <main id="portfolio" class="portfolio">
+  <main id="portfolio">
     <div class="portfolio-header">
       <span class="color"> {{ $t('portfolio.mi') }} </span> {{ $t('portfolio.title') }}
       <span class="header-caption">

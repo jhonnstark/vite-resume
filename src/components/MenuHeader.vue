@@ -40,13 +40,17 @@ header {
 nav {
   display: flex;
   width: 100%;
-  font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
   justify-content: center;
+  padding: 1.7rem 0;
+  transition: 0.4s;
+  font-size: 1rem;
 }
 
 nav a {
+  text-decoration: none;
+  color: hsl(343, 100%, 39%);
+  transition: 0.4s;
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
@@ -62,6 +66,17 @@ nav a.router-link-exact-active:hover {
 
 nav a:first-of-type {
   border: 0;
+}
+
+@media (hover: hover) {
+  header:hover {
+    background-color: var(--vt-c-black-hard);
+    transition: 0.4s;
+  }
+  nav a:hover {
+    /*background-color: hsla(0, 100%, 37%, 0.2);*/
+    padding: 0 1.4rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -83,23 +98,19 @@ nav a:first-of-type {
   nav {
     text-align: left;
     margin-left: -1rem;
-    font-size: 1rem;
-    padding: 1rem 0;
-    margin-top: 1rem;
   }
 }
+
 @media only screen and (max-width: 550px) {
   .wrapper {
     padding: 0 1rem;
   }
-}
-@media only screen and (max-width: 550px) {
+
   nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 1em;
     width: auto;
     font-size: 15px;
   }
@@ -119,7 +130,12 @@ nav a:first-of-type {
     animation-direction: reverse;
     animation-duration: 0s;
   }
+
+  nav a:hover {
+    padding: 0.5rem 10px;
+  }
 }
+
 @media only screen and (max-width: 370px) {
   nav {
     font-size: 12px;

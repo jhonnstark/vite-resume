@@ -45,12 +45,13 @@ export default {
   },
   contact: {
     title: 'Contact',
+    text: "Hey there! Feel free to send me an email. I do my best to respond in a timely manner, but non-urgent emails may take a few extra days. You will find that I'm quite responsive on WhatsApp, so if you have a programming related question, that's a great place to start.",
     me: 'me',
     a: 'Get',
     orders: 'In Touch.',
     subtitle: "Do you have a project in mind? Let's talk!",
     location: 'Location',
-    name: 'Name',
+    Linkedin: 'Linkedin',
     city: 'Mexico City, Mexico',
     email: 'Email'
   },
