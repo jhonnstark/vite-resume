@@ -19,10 +19,10 @@
             {{ $t('caridad.description') }}
           </span>
         </div>
-      </div>
-      <!--about picture-->
-      <div class="about-img">
-        <img alt="Code" src="../assets/img/gatitos.JPEG" />
+        <!--about picture-->
+        <div class="about-img">
+          <img alt="Code" src="../assets/img/gatitos.JPEG" />
+        </div>
       </div>
     </div>
   </main>
