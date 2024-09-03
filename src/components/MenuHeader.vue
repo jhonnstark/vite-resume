@@ -98,6 +98,11 @@ nav a:first-of-type {
   nav {
     text-align: left;
     margin-left: -1rem;
+
+    a {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
   }
 }
 

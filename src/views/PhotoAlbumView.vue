@@ -20,7 +20,7 @@ const onShow = () => {
 
 const showMultiple = () => {
   imgsRef.value = projects[name].map((img, index) => ({
-    src: '/src/assets/img/' + img.src,
+    src: new URL('/src/assets/img/' + img.src, import.meta.url).href,
     title: name + ' ' + (index + 1)
   }))
   indexRef.value = 0 // index of imgList
@@ -28,6 +28,10 @@ const showMultiple = () => {
 }
 
 const onHide = () => (visibleRef.value = false)
+
+const getImageUrl = (src: string) => {
+  return new URL('/src/assets/img/thumbnail/' + src, import.meta.url).href
+}
 </script>
 
 <template>
@@ -43,7 +47,7 @@ const onHide = () => (visibleRef.value = false)
             v-for="img in projects[name]"
             :alt="name.toUpperCase()"
             :key="img.src"
-            :src="'/src/assets/img/thumbnail/' + img.ngsrc"
+            :src="getImageUrl(img.ngsrc)"
             @click="showMultiple"
           />
           <div class="blog-date">{{ $t(name + '.date') }}</div>

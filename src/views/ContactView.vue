@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import AiPopUpComponent from '@/components/AiPopUpComponent.vue'
+</script>
 
 <template>
   <main id="contact" class="main">
@@ -75,6 +77,7 @@
       <img alt="qr code" class="qr" src="../assets/img/jonathan-cervantes-qr.png" />
     </div>
   </main>
+  <AiPopUpComponent />
 </template>
 
 <style scoped>

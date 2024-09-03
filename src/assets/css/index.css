@@ -455,7 +455,7 @@ body {
   justify-content: center;
   height: auto;
   width: 100%;
-  padding: 30px;
+  padding: 0 30px;
 }
 .about-header {
   height: auto;
@@ -1121,12 +1121,12 @@ button:hover .index {
   padding: 30px;
   letter-spacing: 1px;
 }
-/* .blogs:hover .img{
-      transform: translateY(-70%);
-  }
-.blogs:hover .blog-text{
-    transform: translateY(-70%);
-} */
+.blogs img:hover {
+  transform: scale(1.15);
+}
+.blogs:hover .blog-text {
+  transform: translateY(-10%);
+}
 .blogs a {
   text-decoration: none;
   color: whitesmoke;
@@ -1596,7 +1596,7 @@ For devices with smaller width like mobile phone
     justify-content: center;
     height: auto;
     width: 100%;
-    padding: 30px;
+    padding: 0 30px;
   }
   .about-header {
     color: whitesmoke;
@@ -1829,11 +1829,11 @@ For devices with smaller width like mobile phone
     padding: 20px;
     letter-spacing: 1px;
   }
-  .blogs:hover .img {
-    transform: translateY(0%);
+  .blogs img:hover {
+    transform: scale(1.15);
   }
   .blogs:hover .blog-text {
-    transform: translateY(0%);
+    transform: translateY(-10%);
   }
   .contact-content {
     width: 90%;
@@ -2330,11 +2330,11 @@ for tabs and large phones
     padding: 20px;
     letter-spacing: 1px;
   }
-  .blogs:hover .img {
-    transform: translateY(0%);
+  .blogs img:hover {
+    transform: scale(1.15);
   }
   .blogs:hover .blog-text {
-    transform: translateY(0%);
+    transform: translateY(-10%);
   }
   .contact-content {
     width: 90%;
@@ -2572,7 +2572,7 @@ for tabs and large phones
     opacity: 0.8;
   }
   .blogs {
-    height: 420px;
+    height: auto;
     width: 30%;
     margin: auto;
     margin-top: 50px;
@@ -2630,11 +2630,11 @@ for tabs and large phones
     padding: 30px;
     letter-spacing: 1px;
   }
-  .blogs:hover .img {
-    transform: translateY(-70%);
+  .blogs img:hover {
+    transform: scale(1.15);
   }
   .blogs:hover .blog-text {
-    transform: translateY(-70%);
+    transform: translateY(-10%);
   }
   .contact-header {
     height: auto;
