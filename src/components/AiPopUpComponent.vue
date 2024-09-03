@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-var Tawk_API = Tawk_API || {},
+var Tawk_API: unknown = Tawk_API != null ? Tawk_API : {},
   Tawk_LoadStart = new Date()
 ;(function () {
   var s1 = document.createElement('script'),
@@ -8,8 +8,9 @@ var Tawk_API = Tawk_API || {},
   s1.src = 'https://embed.tawk.to/66b1c7cf32dca6db2cba6f99/1i4j790s3'
   s1.charset = 'UTF-8'
   s1.setAttribute('crossorigin', '*')
-  s0.parentNode.insertBefore(s1, s0)
+  s0.parentNode?.insertBefore(s1, s0)
 })()
+console.log('Tawk.to script loaded', Tawk_API, Tawk_LoadStart)
 </script>
 
 <template>
