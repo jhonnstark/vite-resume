@@ -6,11 +6,11 @@ export default {
     hello: 'hello world'
   },
   menu: {
-    home: 'HOME',
-    about: 'ABOUT',
+    home: 'Home',
+    about: 'About me',
     aboutMenu: 'ABOUT',
     portfolio: 'PORTFOLIO',
-    caridad: 'CHARITY',
+    services: 'SERVICES',
     contact: 'CONTACT'
   },
   header: {

@@ -6,12 +6,12 @@ export default {
     hello: 'hola'
   },
   menu: {
-    home: 'INTRO',
-    about: 'CARRERA Y CV',
-    aboutMenu: 'CARRERA',
-    portfolio: 'PORTAFOLIO',
-    caridad: 'CARIDAD',
-    contact: 'CONTACTO'
+    home: 'Intro',
+    about: 'Sobre mi',
+    aboutMenu: 'Carrera',
+    portfolio: 'Portafolio',
+    services: 'Servicios',
+    contact: 'Contacto'
   },
   header: {
     subtitle: 'Soy',

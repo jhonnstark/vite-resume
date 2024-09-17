@@ -2,29 +2,46 @@
 
 <template>
   <main id="caridad">
-    <div class="about-header">
-      <span class="color">{{ $t('caridad.title') }}</span>
-    </div>
-    <!--caridad content-->
-    <div id="about-content">
-      <div class="about-main">
-        <div class="about-first-paragraph wow">
-          <span class="about-first-line">
-            {{ $t('caridad.refugio') }}
-            <span class="color">{{ $t('caridad.gatitos') }}</span>
-          </span>
-          <!--about description-->
-          <br />
-          <span class="about-second-line">
-            {{ $t('caridad.description') }}
-          </span>
+    <!--services start-->
+    <div id="services">
+      <!--services header-->
+      <div class="services-heading wow">
+        {{ $t('about.my') }} <span class="color">{{ $t('about.services') }}</span>
+      </div>
+      <!--services header end-->
+      <!--services content-->
+      <div class="services-content">
+        <div class="service-one service wow">
+          <div class="service-img">
+            <img alt="service-one" src="../assets/img/coding.png" />
+          </div>
+          <div class="service-description">
+            <h2>{{ $t('about.design.title') }}</h2>
+            <p>{{ $t('about.design.description') }}</p>
+          </div>
         </div>
-        <!--about picture-->
-        <div class="about-img">
-          <img alt="Code" src="../assets/img/gatitos.JPEG" />
+        <div class="service-two service wow">
+          <div class="service-img">
+            <img alt="service-two" src="../assets/img/basededatos.png" />
+          </div>
+          <div class="service-description">
+            <h2>{{ $t('about.dataBase.title') }}</h2>
+            <p>{{ $t('about.dataBase.description') }}</p>
+          </div>
+        </div>
+        <div class="service-three service wow">
+          <div class="service-img">
+            <img alt="service-three" src="../assets/img/bulb.png" />
+          </div>
+          <div class="service-description">
+            <h2>{{ $t('about.academic.title') }}</h2>
+            <p>{{ $t('about.academic.description') }}</p>
+          </div>
         </div>
       </div>
     </div>
+    <!--services content end-->
+    <!--services end-->
   </main>
 </template>
 

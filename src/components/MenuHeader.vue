@@ -6,11 +6,11 @@ import { RouterLink } from 'vue-router'
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/portfolio">Portfolio</RouterLink>
-        <RouterLink to="/charity">Charity</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
+        <RouterLink to="/">{{ $t('menu.home') }}</RouterLink>
+        <RouterLink to="/about">{{ $t('menu.about') }}</RouterLink>
+        <RouterLink to="/portfolio">{{ $t('menu.portfolio') }}</RouterLink>
+        <RouterLink to="/services">{{ $t('menu.services') }}</RouterLink>
+        <RouterLink to="/contact">{{ $t('menu.contact') }}</RouterLink>
       </nav>
     </div>
   </header>
@@ -121,7 +121,7 @@ nav a:first-of-type {
   }
 
   nav a {
-    padding: 0.5rem 10px;
+    padding: 0.5rem 7px;
     border: 0;
   }
 
@@ -137,7 +137,7 @@ nav a:first-of-type {
   }
 
   nav a:hover {
-    padding: 0.5rem 10px;
+    padding: 0.5rem 7px;
   }
 }
 

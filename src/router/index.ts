@@ -28,8 +28,8 @@ const router = createRouter({
       component: () => import('../views/PhotoAlbumView.vue')
     },
     {
-      path: '/charity',
-      name: 'charity',
+      path: '/services',
+      name: 'services',
       component: () => import('../views/CharityView.vue')
     },
     {
