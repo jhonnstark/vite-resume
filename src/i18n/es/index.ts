@@ -28,7 +28,7 @@ export default {
     developer: 'desarrollador Web',
     specialized: 'especializado en',
     my: 'Mis',
-    services: 'paciones',
+    services: 'servicios',
     design: {
       title: 'Desarrollo Web',
       description:

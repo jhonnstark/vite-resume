@@ -46,6 +46,10 @@
 </template>
 
 <style scoped>
+#services {
+  padding-top: 30px;
+}
+
 @media only screen and (max-width: 550px) {
   .about-first-line {
     font-size: 20px;
