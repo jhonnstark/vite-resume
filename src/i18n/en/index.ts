@@ -33,21 +33,22 @@ export default {
       title: 'Web Development',
       description: 'Web page development, administration systems and APIs in different languages',
       page: {
-        text: 'I build custom, high-performing websites for growing businesses and organisations that are ready to stand out and lead in their field. I take the time to really understand what you do and where you want to go, so we can create websites, web apps, or eCommerce solutions that actually deliver results. I mostly work with enterprise clients, and not-for-profits.'
+        description:
+          'Design custom, high-performance websites for growing companies and organizations that want to stand out and lead in their sector. I focus on understanding what you do and where you want to go, to create web solutions —whether sites, applications, or eCommerce— that generate real results. I mainly work with corporate clients and non-profit organizations.'
       }
     },
     dataBase: {
       title: 'Database',
       description: 'Database administration, design and programming',
       page: {
-        text: 'I offer database administration, design, and programming services, ensuring your data is organized, accessible, and secure. With experience in various platforms and technologies, I can help you optimize your database performance and ensure its integrity. Whether you need to create a new database from scratch or improve an existing one, I am here to help you achieve your goals.'
+        text: 'I offer comprehensive services in database design, programming, and administration. My goal is to ensure that your data is organized, accessible, and secure. With experience in various technologies and platforms, I can optimize performance and ensure data integrity. Whether you need to develop a new database from scratch or improve an existing one, I can help you achieve your goals.'
       }
     },
     academic: {
       title: 'Academic',
       description: 'Programming courses, from basic to advanced level.',
       page: {
-        text: 'I offer programming courses that cover everything from the basics to advanced levels. These courses are designed to meet the needs of each student, whether you are starting your journey in programming or looking to refine your existing skills. With a practical and theoretical approach, my classes will equip you with the tools you need to excel in the world of software development.'
+        text: 'I offer programming courses that range from basic to advanced levels. These courses are designed to adapt to each student, whether you are just starting in the world of development or looking to refine your skills. With a theoretical and practical approach, you will gain the necessary tools to excel in the software field.'
       }
     },
     skills: 'Habilidades'

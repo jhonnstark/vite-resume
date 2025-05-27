@@ -5,14 +5,19 @@
     <div class="services-heading wow">
       {{ $t('about.academic.title') }}
     </div>
-    <div class="services-content">
-      <p>{{ $t('about.academic.description') }}</p>
-      <ul>
-        <li>{{ $t('about.academic.item1') }}</li>
-        <li>{{ $t('about.academic.item2') }}</li>
-        <li>{{ $t('about.academic.item3') }}</li>
-        <li>{{ $t('about.academic.item4') }}</li>
-      </ul>
+    <div class="about-content">
+      <div class="about-main">
+        <div class="about-first-paragraph wow">
+          <span class="about-first-line">
+            {{ $t('about.iam') }}
+            <span class="color">{{ $t('about.academic.profesor') }}</span>
+          </span>
+          <br />
+          <span class="about-second-line">
+            {{ $t('about.academic.page.text') }}
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </template>

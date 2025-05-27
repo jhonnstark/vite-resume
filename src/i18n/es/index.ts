@@ -32,30 +32,31 @@ export default {
     design: {
       title: 'Desarrollo Web',
       description:
-        'Consrtuccion de paginas web, sistemas de administracion y APIs en diferentes lenguajes',
+        'Desarrollo de sitios web, sistemas de administración y APIs en diversos lenguajes.',
       page: {
-        text: 'Construyo sitios web personalizados y de alto rendimiento para empresas y organizaciones en crecimiento que están listas para destacarse y liderar en su campo. Me tomo el tiempo para entender realmente lo que haces y hacia dónde quieres ir, para que podamos crear sitios web, aplicaciones web o soluciones de comercio electrónico que realmente ofrezcan resultados. Trabajo principalmente con clientes empresariales y organizaciones sin fines de lucro.'
+        text: 'Diseño sitios web personalizados y de alto rendimiento para empresas y organizaciones en crecimiento que desean destacarse y liderar en su sector. Me enfoco en comprender a fondo lo que haces y hacia dónde quieres ir, para crear soluciones web —ya sean sitios, aplicaciones o eCommerce— que generen resultados reales. Trabajo principalmente con clientes corporativos y organizaciones sin fines de lucro.'
       }
     },
-    dataBase: {
+    database: {
       title: 'Base de datos',
-      description: 'Administracion, diseño y programacion de base de datos',
+      description: 'Diseño, programación y administración de bases de datos.',
       page: {
-        text: 'Ofrezco servicios de administración, diseño y programación de bases de datos, asegurando que tus datos estén organizados, accesibles y seguros. Con experiencia en diversas plataformas y tecnologías, puedo ayudarte a optimizar el rendimiento de tus bases de datos y garantizar su integridad. Ya sea que necesites crear una base de datos desde cero o mejorar una existente, estoy aquí para ayudarte a alcanzar tus objetivos.'
+        text: 'Brindo servicios completos de diseño, programación y administración de bases de datos, asegurando que la información esté organizada, accesible y protegida. Tengo experiencia con diversas tecnologías y plataformas, lo que me permite optimizar el rendimiento y garantizar la integridad de tus datos. Ya sea que necesites desarrollar una base desde cero o mejorar una existente, puedo ayudarte a lograrlo.'
       }
     },
     academic: {
-      title: 'Academico',
-      description: 'Cursos de programacion, desde nivel basico hasta avanzado.',
+      title: 'Académico',
+      description: 'Cursos de programación, desde nivel básico hasta avanzado.',
+      profesor: 'Profesor',
       page: {
-        text: 'Ofrezco cursos de programación que abarcan desde los fundamentos básicos hasta niveles avanzados. Estos cursos están diseñados para adaptarse a las necesidades de cada estudiante, ya sea que estés comenzando tu viaje en la programación o buscando perfeccionar tus habilidades existentes. Con un enfoque práctico y teórico, mis clases te equiparán con las herramientas necesarias para sobresalir en el mundo del desarrollo de software.'
+        text: 'Imparto cursos de programación que van desde los fundamentos hasta niveles avanzados. Están diseñados para adaptarse a cada estudiante, ya sea que estés comenzando en el mundo del desarrollo o buscando perfeccionar tus habilidades. Con un enfoque teórico y práctico, obtendrás las herramientas necesarias para destacar en el ámbito del software.'
       }
     },
     skills: 'Habilidades'
   },
   contact: {
     title: 'Contácta',
-    text: '¡Hola! Siéntete libre de enviarme un correo electrónico. Hago todo lo posible por responder de manera oportuna, pero los correos electrónicos no urgentes pueden tardar unos días adicionales. Encontrarás que soy bastante receptivo en WhatsApp, así que si tienes una pregunta relacionada con la programación, ese es un buen lugar para comenzar.',
+    text: '¡Hola! No dudes en enviarme un correo electrónico. Trato de responder lo antes posible, aunque los mensajes no urgentes pueden tardar un poco más. Si buscas una respuesta rápida, suelo ser más ágil por WhatsApp. Si tienes una duda sobre programación, ¡ese es un buen lugar para empezar!',
     me: 'me',
     a: 'a',
     orders: 'tus ordenes.',
@@ -78,7 +79,7 @@ export default {
     title: 'Pagina web',
     date: 'Mayo,2020',
     description:
-      'Compra de boletos y consulta de rutas y precios de las principales rutas de autobuces en México.'
+      'Compra de boletos y consulta de rutas y precios de las principales rutas de autobuses en México.'
   },
   pailot: {
     name: 'Pailot',
@@ -92,13 +93,13 @@ export default {
     title: 'Pagina web',
     date: 'julio, 2019',
     description:
-      'Busolinea te permite comprar boletos de autobús y conocer las rutas, horarios, precios, promociones y líneas de Grupo Estrella Blanca que viajan por el país.'
+      'Compra de boletos, consulta de rutas y tarifas de las principales líneas de autobuses en México.'
   },
   salud: {
     name: 'Salud',
     title: 'Pagina web',
     date: 'julio, 2024',
-    description: 'Un producto para enfrentar cada reto odontologico juntos.'
+    description: 'Una solución pensada para enfrentar cada reto odontológico contigo.'
   },
   cimaco: {
     name: 'Cimaco',
