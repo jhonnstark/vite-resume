@@ -1,9 +1,20 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+</script>
 
 <template>
   <main id="caridad">
     <!--services start-->
-    <div id="services">
+    <div
+      v-if="
+        !route.path.includes('/services/web-development') &&
+        !route.path.includes('/services/database') &&
+        !route.path.includes('/services/academic')
+      "
+      id="services"
+    >
       <!--services header-->
       <div class="services-heading wow">
         {{ $t('about.my') }} <span class="color">{{ $t('about.services') }}</span>
@@ -11,7 +22,7 @@
       <!--services header end-->
       <!--services content-->
       <div class="services-content">
-        <div class="service-one service wow">
+        <router-link class="service-one service wow" to="/services/web-development">
           <div class="service-img">
             <img alt="service-one" src="../assets/img/coding.png" />
           </div>
@@ -19,8 +30,8 @@
             <h2>{{ $t('about.design.title') }}</h2>
             <p>{{ $t('about.design.description') }}</p>
           </div>
-        </div>
-        <div class="service-two service wow">
+        </router-link>
+        <router-link class="service-two service wow" to="/services/database">
           <div class="service-img">
             <img alt="service-two" src="../assets/img/basededatos.png" />
           </div>
@@ -28,8 +39,8 @@
             <h2>{{ $t('about.dataBase.title') }}</h2>
             <p>{{ $t('about.dataBase.description') }}</p>
           </div>
-        </div>
-        <div class="service-three service wow">
+        </router-link>
+        <router-link class="service-three service wow" to="/services/academic">
           <div class="service-img">
             <img alt="service-three" src="../assets/img/bulb.png" />
           </div>
@@ -37,11 +48,13 @@
             <h2>{{ $t('about.academic.title') }}</h2>
             <p>{{ $t('about.academic.description') }}</p>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
     <!--services content end-->
     <!--services end-->
+
+    <router-view />
   </main>
 </template>
 

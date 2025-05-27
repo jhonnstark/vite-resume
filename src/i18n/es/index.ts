@@ -32,15 +32,24 @@ export default {
     design: {
       title: 'Desarrollo Web',
       description:
-        'Consrtuccion de paginas web, sistemas de administracion y APIs en diferentes lenguajes'
+        'Consrtuccion de paginas web, sistemas de administracion y APIs en diferentes lenguajes',
+      page: {
+        text: 'Construyo sitios web personalizados y de alto rendimiento para empresas y organizaciones en crecimiento que están listas para destacarse y liderar en su campo. Me tomo el tiempo para entender realmente lo que haces y hacia dónde quieres ir, para que podamos crear sitios web, aplicaciones web o soluciones de comercio electrónico que realmente ofrezcan resultados. Trabajo principalmente con clientes empresariales y organizaciones sin fines de lucro.'
+      }
     },
     dataBase: {
       title: 'Base de datos',
-      description: 'Administracion, diseño y programacion de base de datos'
+      description: 'Administracion, diseño y programacion de base de datos',
+      page: {
+        text: 'Ofrezco servicios de administración, diseño y programación de bases de datos, asegurando que tus datos estén organizados, accesibles y seguros. Con experiencia en diversas plataformas y tecnologías, puedo ayudarte a optimizar el rendimiento de tus bases de datos y garantizar su integridad. Ya sea que necesites crear una base de datos desde cero o mejorar una existente, estoy aquí para ayudarte a alcanzar tus objetivos.'
+      }
     },
     academic: {
       title: 'Academico',
-      description: 'Cursos de programacion, desde nivel basico hasta avanzado.'
+      description: 'Cursos de programacion, desde nivel basico hasta avanzado.',
+      page: {
+        text: 'Ofrezco cursos de programación que abarcan desde los fundamentos básicos hasta niveles avanzados. Estos cursos están diseñados para adaptarse a las necesidades de cada estudiante, ya sea que estés comenzando tu viaje en la programación o buscando perfeccionar tus habilidades existentes. Con un enfoque práctico y teórico, mis clases te equiparán con las herramientas necesarias para sobresalir en el mundo del desarrollo de software.'
+      }
     },
     skills: 'Habilidades'
   },

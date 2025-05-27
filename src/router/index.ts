@@ -30,7 +30,24 @@ const router = createRouter({
     {
       path: '/services',
       name: 'services',
-      component: () => import('../views/CharityView.vue')
+      component: () => import('../views/CharityView.vue'),
+      children: [
+        {
+          path: 'web-development',
+          name: 'web-development',
+          component: () => import('../views/WebDevelopmentView.vue')
+        },
+        {
+          path: 'database',
+          name: 'database',
+          component: () => import('../views/DatabaseView.vue')
+        },
+        {
+          path: 'academic',
+          name: 'academic',
+          component: () => import('../views/AcademicView.vue')
+        }
+      ]
     },
     {
       path: '/contact',

@@ -1024,6 +1024,7 @@ button:hover .index {
   left: -25px;
   z-index: 10;
   opacity: 0.6;
+  opacity: 0.6;
   transition: scale 0.5s ease;
 }
 .cursor-small {
@@ -1047,7 +1048,11 @@ button:hover .index {
 #busolinea,
 #cimaco,
 #caridad,
-#salud {
+#salud,
+#academic,
+#blog,
+#database,
+#web-development {
   background: #101010;
   color: whitesmoke;
   width: 100%;
@@ -1601,6 +1606,7 @@ For devices with smaller width like mobile phone
     color: whitesmoke;
     justify-content: center;
     font-size: 35px;
+    font-family: raleway, serif;
     font-family: raleway, serif;
     padding-bottom: 0;
     font-weight: 900;
