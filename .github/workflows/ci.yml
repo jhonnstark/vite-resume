@@ -1,5 +1,9 @@
 name: CI/CD Simplified
 
+permissions:
+  id-token: write
+  contents: read
+
 on:
   push:
     branches: [develop, main]
@@ -68,9 +72,9 @@ jobs:
             --exclude "*.html" \
             --exclude "*.json"
 
-          # Set shorter cache for HTML and JSON files  
           aws s3 sync dist/ s3://${{ secrets.S3_BUCKET_NAME }} \
             --cache-control "public, max-age=0, must-revalidate" \
+            --exclude "*" \
             --include "*.html" \
             --include "*.json"
 
