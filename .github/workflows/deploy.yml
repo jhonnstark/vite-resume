@@ -83,7 +83,7 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync dist/ s3://${{ secrets.S3_BUCKET }} --delete --exact-timestamps
+          aws s3 sync dist/ s3://${{ secrets.S3_BUCKET_NAME }} --delete --exact-timestamps
 
       - name: Invalidate CloudFront (optional)
         if: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID != '' }}
@@ -95,4 +95,4 @@ jobs:
       - name: Deployment successful
         run: |
           echo "🚀 Deployment completed successfully!"
-          echo "Site URL: https://${{ secrets.S3_BUCKET }}.s3-website-${{ secrets.AWS_REGION }}.amazonaws.com"
+          echo "Site URL: https://${{ secrets.S3_BUCKET_NAME }}.s3-website-${{ secrets.AWS_REGION }}.amazonaws.com"
